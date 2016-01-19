@@ -1,0 +1,228 @@
+.article
+  margin: block-margin 0
+
+.article-inner
+  @extend $block
+  overflow: hidden
+
+.article-meta
+  clearfix()
+
+.article-date
+  @extend $block-caption
+  float: left
+
+.article-category
+  float: left
+  line-height: 1em
+  color: #ccc
+  text-shadow: 0 1px #fff
+  margin-left: 8px
+  &:before
+    content: "\2022"
+
+.article-category-link
+  @extend $block-caption
+  margin: 0 12px 1em
+
+.article-header
+  padding: 1em 0 1em 1em
+  background-color: rgb(221, 220, 220)
+  margin: 0 0 1em 0
+
+.article-title
+  text-align: center
+  text-decoration: none
+  font-size: 2em
+  font-weight: bold
+  color: color-default
+  line-height: line-height-title
+  transition: color 0.2s
+  a&:hover
+    color: color-link
+
+.article-entry
+  @extend $base-style
+  clearfix()
+  color: color-default
+  padding: 0 article-padding
+  p, table
+    line-height: line-height
+    margin: 0 0 1em
+  h1
+    font-size: 1.6em
+  h2
+    font-size: 1.3em
+  h1, h2, h3, h4, h5, h6
+    font-weight: bold
+  h1, h2, h3, h4, h5, h6
+    line-height: line-height-title
+    margin: line-height-title 0
+  a
+    color: color-link
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+  ul, ol, dl
+    margin-top: line-height
+    margin-bottom: line-height
+  img, video
+    max-width: 80%
+    max-height: 400px
+    height: auto
+    display: block
+    margin: auto
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px #bbb;
+    -webkit-border-radius: 3px;
+    -webkit-box-shadow: 2px 2px 4px #bbb;
+  iframe
+    border: none
+  table
+    width: calc(100% - 2em);
+    margin: 0 1em 1em 1em
+    border-collapse: collapse
+    border-spacing: 0
+  th, td
+    border: 1px solid rgb(152, 191, 33)
+    padding: 3px 7px 2px
+  th
+    background-color:#A7C942;
+    font-weight: bold
+  blockquote
+    padding: 1em 2em 0.1em 1em;
+    margin:1em 0;
+    border-left: 5px solid #009a61;
+
+    ol, ul
+      margin-top:0
+      margin-bottom:0
+
+    footer
+      font-size: font-size
+      margin: line-height 0
+      font-family: font-sans
+      cite
+        &:before
+          content: "—"
+          padding: 0 0.5em
+  .pullquote
+    text-align: left
+    width: 45%
+    margin: 0
+    &.left
+      margin-left: 0.5em
+      margin-right: 1em
+    &.right
+      margin-right: 0.5em
+      margin-left: 1em
+  .caption
+    color: color-grey
+    display: block
+    font-size: 0.9em
+    margin-top: 0.5em
+    position: relative
+    text-align: center
+  // http://webdesignerwall.com/tutorials/css-elastic-videos
+  .video-container
+    position: relative
+    padding-top: (9 / 16 * 100)% // 16:9 ratio
+    height: 0
+    overflow: hidden
+    iframe, object, embed
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      margin-top: 0
+
+.article-more-link a
+  display: inline-block
+  line-height: 1em
+  color: color-grey
+  text-decoration: none
+  &:hover
+    color: #CF000F
+    text-decoration: none
+
+.article-footer
+  clearfix()
+  font-size: 0.85em
+  line-height: line-height
+  border-top: 1px solid color-border
+  padding-top: line-height
+  margin: 0 article-padding article-padding
+  a
+    color: color-grey
+    text-decoration: none
+    &:hover
+      color: color-default
+
+.article-tag-list-item
+  float: left
+  margin-right: 10px
+
+.article-tag-list-link
+  &:before
+    content: "#"
+
+.article-comment-link
+  float: right
+  &:before
+    content: "\f075"
+    font-family: font-icon
+    padding-right: 8px
+
+#article-nav
+  clearfix()
+  position: relative
+  @media mq-normal
+    margin: block-margin 0
+    &:before
+      absolute-center(8px)
+      content: ""
+      border-radius: 50%
+      background: color-border
+      box-shadow: 0 1px 2px #fff
+
+.article-nav-link-wrap
+  text-decoration: none
+  text-shadow: 0 1px #fff
+  color: color-grey
+  box-sizing: border-box
+  margin-top: block-margin
+  text-align: center
+  display: block
+  &:hover
+    color: color-default
+  @media mq-normal
+    width: 50%
+    margin-top: 0
+
+#article-nav-newer
+  @media mq-normal
+    float: left
+    text-align: right
+    padding-right: 20px
+
+#article-nav-older
+  @media mq-normal
+    float: right
+    text-align: left
+    padding-left: 20px
+
+.article-nav-caption
+  text-transform: uppercase
+  letter-spacing: 2px
+  color: color-border
+  line-height: 1em
+  font-weight: bold
+  #article-nav-newer &
+    margin-right: -2px
+
+.article-nav-title
+  font-size: 0.85em
+  line-height: line-height
+  margin-top: 0.5em

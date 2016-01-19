@@ -1,0 +1,18 @@
+# Header
+menu:
+  Home: /
+  Archives: /archives
+  About: /aboutme.html
+rss: /atom.xml
+
+menu_icon:
+  Home: fa-home
+  Archives: fa-archive
+  About: fa-user
+
+# Content
+excerpt_link: Read More
+
+# Miscellaneous
+favicon: /image/favicon.ico
+google_analytics:
