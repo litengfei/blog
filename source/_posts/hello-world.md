@@ -1,38 +1,17 @@
 ---
-title: Hello World
+title: 面朝大海，春暖花开
+id: 1
+categories:
+  - 未分类
+date: 2015-12-26 14:56:51
+tags:
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+从今天开始，做个勤快的分享者，
+走过的路，趟过的坑，点点滴滴的积累，都记到这里；
 
-### Create a new post
+愿某些思路能供您参考，
+愿除错经历能助您直前。
 
-``` bash
-$ hexo new "My New Post"
-```
-
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/deployment.html)
+我有一个不大的博客空间，
+面朝大海，春暖花开。
